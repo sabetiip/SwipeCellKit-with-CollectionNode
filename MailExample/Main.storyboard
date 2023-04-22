@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LX8-Wu-PZs">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="t3H-qW-IeR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="LX8-Wu-PZs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J9z-jV-3U7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bOW-0N-oQR">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="bYX-by-vgA" kind="relationship" relationship="rootViewController" id="Tlp-c0-woX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teA-Er-8PS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="607"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Gs-d0-A93">
+            <objects>
+                <viewController id="bYX-by-vgA" customClass="ViewController" customModule="MailExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bUs-j4-YMn"/>
+                        <viewControllerLayoutGuide type="bottom" id="6eO-4A-G61"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oIF-yg-YKf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLM-ez-SJ0">
+                                <rect key="frame" x="145" y="352.66666666666669" width="124" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="action:" destination="bYX-by-vgA" eventType="touchUpInside" id="CCn-1x-ESa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BLM-ez-SJ0" firstAttribute="centerX" secondItem="oIF-yg-YKf" secondAttribute="centerX" id="8tZ-QR-7mi"/>
+                            <constraint firstItem="BLM-ez-SJ0" firstAttribute="centerY" secondItem="oIF-yg-YKf" secondAttribute="centerY" id="Kz7-8y-oqe"/>
+                            <constraint firstItem="BLM-ez-SJ0" firstAttribute="width" secondItem="oIF-yg-YKf" secondAttribute="width" multiplier="0.3" id="Y6S-Yt-4sa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pjk-8K-Enm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xx-Sf-NTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679.71014492753625" y="606.52173913043487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

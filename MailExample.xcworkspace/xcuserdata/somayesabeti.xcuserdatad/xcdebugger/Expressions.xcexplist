@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SwipeActionsView.visibleWidth.didset:SwipeActionsView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SwipeCollectionViewCell.hitTest(_:with:):SwipeCollectionViewCell.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
